@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Superhero API</h1>
+    </header>
+    
+    <main>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search heroes...">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="hero-list"></div>
+    </main>
+
+    <div class="carousel">
+        <button class="prev" onclick="prevHero()">&#10094;</button>
+        <div class="carousel-container">
+            <div class="hero-card" id="hero-card"></div>
+        </div>
+        <button class="next" onclick="nextHero()">&#10095;</button>
+    </div>
+
+    <footer>
+        <p>&#169; 2024 S.Harris My Superhero App</p>
+    </footer>
+
+    <script type="module" src="api.mjs" async></script>
+    <script type="module" src="app.mjs" async></script>
+</body>
+</html>
